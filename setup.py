@@ -51,13 +51,17 @@ install_requires = fetch_dependencies('requirements.txt')
 
 def read(fname):
     try:
-        return open(os.path.join(os.path.dirname(__file__), fname)).read()
-    except IOError:
+        print('read:{}'.format(fname))
+        path = os.path.join(os.path.dirname(__file__), fname)
+        return open(path, 'r').read()
+    except IOError as e:
+        print('read {} error.'.format(path))
+        print(e)
         return ''
 
 setup(
     name="django2-asyncmailer",
-    version='0.0.1',
+    version='0.0.2',
     description=read('DESCRIPTION'),
     long_description=read('README.md'),
     long_description_content_type="text/markdown",
