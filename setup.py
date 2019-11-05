@@ -59,7 +59,7 @@ setup(
     name="django2-asyncmailer",
     version='0.0.1',
     description=read('DESCRIPTION'),
-    long_description=read('READMD.md'),
+    long_description=read('README.md'),
     long_description_content_type="text/markdown",
     license='The MIT License',
     platforms=['OS Independent'],
