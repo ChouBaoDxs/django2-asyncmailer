@@ -14,7 +14,7 @@ def async_select_and_send(email, title, plain_text, rich_text=None,
     try:
         providers = Provider.objects.all()
         good_providers = sorted([x for x in providers if x.can_send(email)],
-                                key=lambda p: p.can_send, reverse=True)
+                                key=lambda p: p.can_send(), reverse=True)
         top_preference = good_providers[0].preference
         top_providers = [provider for provider in good_providers if
                          provider.preference == top_preference]

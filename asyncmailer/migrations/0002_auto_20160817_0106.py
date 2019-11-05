@@ -23,7 +23,7 @@ class Migration(migrations.Migration):
                 ('context', jsonfield.fields.JSONField(blank=True, null=True)),
                 ('email', models.EmailField(max_length=254)),
                 ('title', models.CharField(max_length=255)),
-                ('key', models.CharField(db_index=True, default=b'##default_key##', max_length=100)),
+                ('key', models.CharField(db_index=True, default='##default_key##', max_length=100)),
                 ('schedule_time', models.DateTimeField()),
             ],
         ),

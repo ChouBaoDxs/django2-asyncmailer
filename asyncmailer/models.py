@@ -9,7 +9,7 @@ from premailer import transform
 
 
 class DeferredMail(models.Model):
-    template = models.ForeignKey('EmailTemplate', null=True, blank=True)
+    template = models.ForeignKey('EmailTemplate', null=True, blank=True, on_delete=models.CASCADE)
     local_template = models.CharField(max_length=255, null=True, blank=True)
     context = JSONField(blank=True, null=True)
     email = models.EmailField()

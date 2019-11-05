@@ -56,16 +56,16 @@ def read(fname):
         return ''
 
 setup(
-    name="django-asyncmailer",
-    version=app.__version__,
+    name="django2-asyncmailer",
+    version='0.0.1',
     description=read('DESCRIPTION'),
     long_description=read('README.rst'),
     license='The MIT License',
     platforms=['OS Independent'],
     keywords='django, async, email',
-    author='Dezhi “Andy” Fang',
-    author_email='andyfang.dz@gmail.com',
-    url="https://github.com/andyfangdz/django-asyncmailer",
+    author='Dong',
+    author_email='choubaodxs@163.com',
+    url="https://github.com/ChouBaoDxs/django2-asyncmailer",
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
