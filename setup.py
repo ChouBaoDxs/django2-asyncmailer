@@ -61,7 +61,7 @@ def read(fname):
 
 setup(
     name="django2-asyncmailer",
-    version='0.0.2',
+    version='0.0.3',
     description=read('DESCRIPTION'),
     long_description=read('README.md'),
     long_description_content_type="text/markdown",
