@@ -1,5 +1,6 @@
 celery
 django-compat
 html2text
-jsonfield
+# jsonfield
+django-jsonfield
 premailer
